@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#tamanhotela{
+    height: 100vh;
+}
+#cabecalho{
+    background-color: rgb(255, 222, 123);
+    padding: 10px;
+    height: 10vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#container {
+    background-color: rgb(192, 116, 45);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+ 
+
+}
+#container *{
+    margin: 5px;
+}
+#rodape{
+    display: flex;
+    background-color: rgb(255, 222, 123);
+    flex-direction: column;
+    text-align: center;
+    height: 10vh;
+}
+#central div{
+    text-align: center;
+}
+input{
+    text-align: center;
+}
+#favo{
+    display: flex;
+    align-items: center;
+
+}
+#favo svg{
+    margin-right: -6px;
+}
+#cabecalhocarrinho{
+    display: flex;
+    gap: 25px;
+    margin-right: 40px;
+
+}
+#colmeia{
+    display: flex;
+    align-items: center;
+    
+}
+#colmeia svg{
+    margin-left: 10px;
+    
+}
+#central button{
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+#central button:hover{
+    background-color: gray;
+
+}
