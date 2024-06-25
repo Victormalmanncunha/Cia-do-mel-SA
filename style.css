@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}body{
+    background-color: aqua;
+    
+}
+header{
+    background: rgb(255, 222, 103);
+    color:rgb(17, 17, 17)
+}
+footer{
+    background: rgb(255, 222, 103);
+    bottom: 0;
+}
+header,
+footer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 12vh;
+    position: absolute;
+    width: 100%;
+}
+.global{
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    align-items: center;
+    text-align: center;
+    background-color: rgb(192, 116, 45);
+  
+}
+ .container-login{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius:8px ;
+    padding: 10px;
+}
+#button{
+    border: 3px solid rgb(0, 0, 0);
+    border-radius:8px ;
+}
+.container-register{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius:8px ;
+    padding: 10px;
+}
+#cadastrar{
+    border: 3px solid rgb(0, 0, 0);
+    border-radius:8px ;
+} 
+
+ #h3{
+    border: 3px solid rgb(0, 0, 0);
+    border-radius:8px ;
+    padding: 10px; 
+}
+#deslogar{
+    border: 3px solid rgb(0, 0, 0);
+    border-radius:8px ;
+    
+}
+input{
+    display: flex;
+    text-align: center;
+}
+button:hover{
+    background-color: rgb(255, 222, 103);
+    transition: ease-in 10ms; 
+}
+.header{
+    display: flex;
+
+
+}
+.Cabecalho{
+    display: flex;
+    text-align: center;
+   
+}
