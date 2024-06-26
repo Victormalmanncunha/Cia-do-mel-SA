@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}body{
+    background-color:rgb(192, 116, 45);
+    
+}
+header{
+    background: rgb(255, 222, 103);
+    color:rgb(17, 17, 17)
+}
+footer{
+    background: rgb(255, 222, 103);
+    bottom: 0;
+}
+header,
+footer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 10vh;
+    position: absolute;
+    width: 100%;
+}
+.global{
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(192, 116, 45);
+  
+}
+ .container-login{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    font-size: 50px;
+ 
+}
+
+#button, #cadastrar{
+    background-color: black;
+    font-size: 25px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+#button:hover, #cadastrar:hover{
+    background-color:gray;
+    transition: ease-in 10ms; 
+}
+
+input{
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.container-register{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    font-size: 50px;
+ 
+}
+
+ #h3{
+    border: 3px solid rgb(0, 0, 0);
+    border-radius:8px ;
+    padding: 10px; 
+
+}
+ 
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+}  
+.cabecalhoTitulos{
+    display: flex;
+   align-items: center;
+   
+}
+.cabecalhoTitulos svg{
+    margin-right: -0.38rem;
+}
+.cabecalhoBotao{
+    display: flex;
+    text-align: center;
+    gap: 25px;
+    margin-right: 40px;
+    
+}
+.footer{
+    flex-direction: column;
+}
+#icones{
+    display: flex;
+    align-items: center;
+   
+}
