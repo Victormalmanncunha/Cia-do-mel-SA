@@ -1,6 +1,3 @@
-
-//localStorage.clear() - Apagar dados
-
 const campoLogin = document.getElementById("username");
 const campoSenha = document.getElementById("password");
 const campoNovoLogin = document.getElementById("newusername");
