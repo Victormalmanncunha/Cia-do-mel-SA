@@ -81,14 +81,16 @@ input{
     display: flex;
     justify-content: space-between;
     font-weight: bolder;
+    align-items: center;
 }  
 .cabecalhoTitulos{
     display: flex;
    align-items: center;
    
+   
 }
 .cabecalhoTitulos svg{
-    margin-right: -0.38rem;
+    margin-right: -00.38rem;
 }
 .cabecalhoBotao{
     display: flex;
@@ -96,6 +98,10 @@ input{
     gap: 25px;
     margin-right: 40px;
     
+}
+.carrinho{
+    display: flex;
+    align-items: center;
 }
 .footer{
     flex-direction: column;
