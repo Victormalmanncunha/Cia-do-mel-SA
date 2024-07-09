@@ -52,10 +52,43 @@
     align-items: center;
     flex-direction: column;
     margin-top: 1rem;
+    text-align: center;
 }
 .produto img{
     width: 100%;
     height: auto;
+    max-height: 15rem;
+    border: solid 0.2rem black;
+}
+.produto p{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.produto button{
+    border: none;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    background-color: rgb(51, 218, 0);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.produto button:active{
+    margin-top: 0.2rem;
+    background-color: rgb(128, 255, 90);
+}
+.produto div{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+.produto input{
+    width: 20%;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: solid 0.1rem black;
 }
 #footer{
     background-color: rgb(255, 222, 103);
