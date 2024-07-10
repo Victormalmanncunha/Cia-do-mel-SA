@@ -4,6 +4,11 @@ const campoNovoLogin = document.getElementById("newusername");
 const campoNovaSenha = document.getElementById("newpassword");
 const campoRepSenha = document.getElementById("reppassword");
 
+function paginaInicio(){
+    window.location.href = "index.html"
+}
+
+
 function logar(){
     let login = campoLogin.value;
     let senha = campoSenha.value; 
