@@ -8,7 +8,7 @@
     height: 100vh;
 }
 #cabecalho{
-    background-color: rgb(255, 222, 123);
+    background-color: rgb(255, 222, 103);
     padding: 10px;
     height: 10vh;
     display: flex;
@@ -28,12 +28,14 @@
 #container *{
     margin: 5px;
 }
-#rodape{
+#footer{
+    background-color: rgb(255, 222, 103);
+    width: 100%;
+    height: 10%;
     display: flex;
-    background-color: rgb(255, 222, 123);
+    align-items: center;
     flex-direction: column;
-    text-align: center;
-    height: 10vh;
+    font-weight: bolder;
 }
 #central div{
     text-align: center;
@@ -48,35 +50,60 @@ input{
 #favo{
     display: flex;
     align-items: center;
-    cursor: pointer;/*
-
+    cursor: pointer;
 }
-#favo svg{
-    margin-right: -6px;/*margen direita*/
-}
-#cabecalhocarrinho{
-    display: flex;
-    gap: 25px;
-    margin-right: 40px;
-
-}
-#colmeia{
+#header{
+    background-color: rgb(255, 222, 103);
+    width: 100%;
+    height: 10%;
     display: flex;
     align-items: center;
-    
+    justify-content: space-between;
 }
-#colmeia svg{
-    margin-left: 10px;
-    
+#topoTitulo{
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+    font-weight: bolder;
+}
+#topoTitulo svg{
+    margin-right: -0.38rem; 
+}
+#topoTitulo:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 300ms;
+}
+#topoBotoes{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 4rem;
+}
+.botoes{
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.botoes:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 300ms;
+}
+#carrinho{
+    display: flex;
+    align-items: center;
 }
 #container button{
     background-color: black;
     color: white;
     padding: 10px;
-    padding-left: 150px;
-    padding-right: 150px;
-
-
+    padding-left: 75px;
+    padding-right: 75px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 #container button:hover{
     background-color: gray;
