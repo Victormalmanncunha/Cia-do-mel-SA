@@ -4,9 +4,10 @@
 }
 #section{
     height: 100vh;
+    color: rgb(255, 222, 103);
 }
 #header{
-    background-color: rgb(255, 222, 103);
+    background-color: rgb(44, 44, 44);
     width: 100%;
     height: 10%;
     display: flex;
@@ -29,14 +30,14 @@
     transition: ease-in-out 300ms;
 }
 #meio{
-    background-image: url(https://d2jx2rerrg6sh3.cloudfront.net/images/news/ImageForNews_753423_16891547829825380.jpg);
+    background-image: url(https://wallpaperaccess.com/full/1585723.jpg);
     height: 80%;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 #footer{
-    background-color: rgb(255, 222, 103);
+    background-color: rgb(44, 44, 44);
     width: 100%;
     height: 10%;
     display: flex;
@@ -66,7 +67,4 @@
 #carrinho{
     display: flex;
     align-items: center;
-}
-#textoApagadoFooter{
-    color: rgb(82, 82, 82);
 }
