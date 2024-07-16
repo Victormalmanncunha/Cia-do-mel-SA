@@ -6,8 +6,8 @@
     
 }
 header{
-    background: rgb(255, 222, 103);
-    color:rgb(17, 17, 17)
+    background: rgb(44, 44, 44);
+    color:rgb(255, 222, 103);
 }
 #global2{
     height: 100vh;
@@ -25,25 +25,35 @@ header{
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    background-color: rgb(192, 116, 45);
-  
+    background-image: url(https://wallpaperboat.com/wp-content/uploads/2019/12/honey-24.jpg);
+    background-size: cover;
+    overflow-x: auto;
 }
+
  .container-login{
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 15px;
-    font-size: 50px;
+    font-size: 40px;
+    backdrop-filter: blur(8px);
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 1px rgba(255, 255, 255, 0.70) solid;
 }
-
-#button, #cadastrar{
-    background-color: black;
-    font-size: 25px;
+label{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+#logar, #cadastrar{
+    background-color: rgb(44, 44, 44);
+    font-size: 20px;
     border-radius: 5px;
+    padding: 0.5rem;
     border: none;
     color: white;
 }
-#button:hover, #cadastrar:hover{
+#logar:hover, #cadastrar:hover{
     background-color:gray;
     transition: ease-in 10ms; 
 }
@@ -62,8 +72,11 @@ input{
     flex-direction: column;
     text-align: center;
     gap: 15px;
-    font-size: 50px;
- 
+    font-size: 40px;
+    backdrop-filter: blur(8px);
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 1px rgba(255, 255, 255, 0.70) solid;
 }
 
  #h3{
@@ -73,7 +86,7 @@ input{
 
 }
 #header{
-    background-color: rgb(255, 222, 103);
+    background-color: rgb(44, 44, 44);
     width: 100%;
     height: 10%;
     display: flex;
@@ -116,11 +129,12 @@ input{
     align-items: center;
 }
 #footer{
-    background-color: rgb(255, 222, 103);
+    background-color: rgb(44, 44, 44);
     width: 100%;
     height: 10%;
     display: flex;
     align-items: center;
     flex-direction: column;
     font-weight: bolder;
+    color: rgb(255, 222, 103);
 }
