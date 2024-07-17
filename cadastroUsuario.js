@@ -13,50 +13,45 @@ function logar(){
     let login = campoLogin.value;
     let senha = campoSenha.value; 
     let mensagem = "Usuário ou senha incorreta!";
-    let bancoDeDados = JSON.parse(localStorage.getItem("bancoDeDados"));
-if (bancoDeDados == null) {
+    let usuarios = JSON.parse(localStorage.getItem("usuarios"));
+if (usuarios == null) {
     mensagem = "Nenhum usuário cadastrado até o momento";
 } else {
-    for (let usuario of bancoDeDados) {
+    for (let usuario of usuarios) {
         if (usuario.login == login && usuario.senha == senha) {
-            mensagem = "Parabéns, você logou!";
             localStorage.setItem("logado", JSON.stringify(usuario));
-            
-            break;
+            window.location.href = "index.html"
         }
     }
     
 }
 alert(mensagem)
 }
+
 function cadastrar(){
-    if (campoNovaSenha.value == campoRepSenha.value) {
-        const usuario = {
-            login: campoNovoLogin.value,
-            senha: campoNovaSenha.value
-        };
-        let bancoDeDados = JSON.parse(localStorage.getItem("bancoDeDados"));
-        if (bancoDeDados == null) {
-            bancoDeDados = [];
+    if(campoNovoLogin.value != '' && campoNovaSenha.value != ''){
+        if (campoNovaSenha.value == campoRepSenha.value) {
+
+            const usuario = {
+                login: campoNovoLogin.value,
+                senha: campoNovaSenha.value
+            };
+            let usuarios = JSON.parse(localStorage.getItem("usuarios")) || []
+            for(let verificado of usuarios){
+                if(verificado.login == usuario.login){
+                    return alert("Esse login já foi cadastrado, realize um cadastro com nome diferente")
+                }
+            }
+            
+            usuarios.push(usuario);
+            localStorage.setItem("usuarios", JSON.stringify(usuarios));
+            alert("Usuário cadastrado com sucesso!");   
+            
+        }else{
+            alert("As senhas são diferentes!");
         }
-       if(existe(usuario,bancoDeDados)){
-        alert("Esse login já foi cadastrado, realize um cadastro com nome diferente")
-       }else{
-    
-        bancoDeDados.push(usuario);
-        localStorage.setItem("bancoDeDados", JSON.stringify(bancoDeDados));
-        alert("Usuário cadastrado com sucesso!");   
-       }
     } else{
-        alert("As senhas são diferentes!");
+        alert("Preencha os campos obrigatórios.")
     }
-    
-}
-function existe(usuario,banco){
-    for(let verificado of banco){
-        if(verificado.login == usuario.login){
-        return true;
-    }
- }
- return false;
+        
 }
