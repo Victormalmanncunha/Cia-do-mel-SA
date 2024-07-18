@@ -4,7 +4,7 @@ const campoNovoLogin = document.getElementById("newusername");
 const campoNovaSenha = document.getElementById("newpassword");
 const campoRepSenha = document.getElementById("reppassword");
 
-function paginaInicio(){
+function irPaginaInicio(){
     window.location.href = "index.html"
 }
 
@@ -20,6 +20,7 @@ if (usuarios == null) {
     for (let usuario of usuarios) {
         if (usuario.login == login && usuario.senha == senha) {
             localStorage.setItem("logado", JSON.stringify(usuario));
+            mensagem = "Logado com sucesso!!"
             window.location.href = "index.html"
         }
     }
@@ -55,3 +56,17 @@ function cadastrar(){
     }
         
 }
+function irPaginaCatalogo(){
+    window.location.href = "catalogo.html"
+
+}
+function criarAdm(){
+    let usuarios = JSON.parse(localStorage.getItem("usuarios"))
+    if(usuarios == null){
+        usuarios =[]
+        usuarios.push({login: 'ADM',
+            senha: '2024'})
+            localStorage.setItem('usuarios', JSON.stringify(usuarios))
+    }
+}
+criarAdm()
