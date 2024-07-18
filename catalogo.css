@@ -99,6 +99,9 @@
     font-size: 1.5rem;
     border: solid 0.1rem black;
 }
+.produto p{
+    font-size: 1.1rem;
+}
 #footer{
     background-color: rgb(44, 44, 44);
     width: 100%;
@@ -130,4 +133,7 @@
 #carrinho{
     display: flex;
     align-items: center;
+}
+#cadastroProdutos{
+    display: none;
 }
