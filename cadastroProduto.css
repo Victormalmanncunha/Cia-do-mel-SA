@@ -33,6 +33,7 @@
     backdrop-filter: blur(10px);
     border-radius: 1rem;
     border: 1px rgba(255, 255, 255, 0.70) solid;
+    width: 40%;
 }
 #container *{
     margin: 5px;
@@ -109,9 +110,9 @@ input{
 #container button{
     background-color: rgb(44, 44, 44);
     color: white;
-    padding: 10px;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
