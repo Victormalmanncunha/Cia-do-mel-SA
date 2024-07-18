@@ -11,13 +11,13 @@
 <div id="global2">
 
     <header id="header">
-        <div id="topoTitulo" onclick="paginaInicio()">
+        <div id="topoTitulo" onclick="irPaginaInicio()">
             <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24"><path fill="currentColor" d="m10.039 21.5l-1.7-3h-3.3L3.076 15l1.7-3l-1.7-3l1.961-3.5h3.3l1.7-3h3.923l1.7 3h3.3L20.924 9l-1.7 3l1.7 3l-1.961 3.5h-3.3l-1.7 3zm5.623-10h2.726l1.39-2.5l-1.388-2.5h-2.727L14.248 9zm-5 3h2.676l1.414-2.5l-1.414-2.5h-2.676L9.248 12zm0-6h2.676l1.439-2.525L13.364 3.5h-2.728L9.224 5.975zm-5.026 3h2.702L9.753 9L8.338 6.5H5.637L4.223 9zm0 6h2.702L9.753 15l-1.414-2.5H5.613L4.223 15zm5 3h2.728l1.413-2.475l-1.438-2.525h-2.677l-1.439 2.525zm5.026-3h2.701l1.414-2.5l-1.413-2.5h-2.702L14.248 15z"/></svg>
             <p>CIA DO MEL</p>
         </div>
         <div id="topoBotoes">
             <p class="botoes">Entrar/Cadastre-se</p>
-            <p class="botoes">Catálogo</p>
+            <p class="botoes" onclick="irPaginaCatalogo()">Catálogo</p>
             <div id="carrinho" class="botoes">
                 <p>Carrinho/R$0.00</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24"><path fill="currentColor" d="M23 14.5c0-1.56-1.03-2.87-2.45-3.32c.28-.5.45-1.07.45-1.68c0-1.56-1.03-2.87-2.45-3.32c.28-.5.45-1.07.45-1.68C19 2.57 17.43 1 15.5 1h-7C6.57 1 5 2.57 5 4.5c0 .61.17 1.18.45 1.68C4.04 6.63 3 7.94 3 9.5c0 .61.17 1.18.45 1.68C2.04 11.63 1 12.94 1 14.5c0 1.26.67 2.34 1.67 2.96c-.42.57-.67 1.28-.67 2.04C2 21.43 3.57 23 5.5 23h13c1.93 0 3.5-1.57 3.5-3.5c0-.76-.25-1.47-.67-2.04c1-.62 1.67-1.7 1.67-2.96M8.5 3h7c.83 0 1.5.67 1.5 1.5S16.33 6 15.5 6h-7C7.67 6 7 5.33 7 4.5S7.67 3 8.5 3m-2 5h11c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-11C5.67 11 5 10.33 5 9.5S5.67 8 6.5 8M4 19.5c0-.83.67-1.5 1.5-1.5H9v3H5.5c-.83 0-1.5-.67-1.5-1.5M18.5 21H15v-3h3.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5m1-5h-4.68c-.42-1.16-1.52-2-2.82-2s-2.4.84-2.82 2H4.5c-.83 0-1.5-.67-1.5-1.5S3.67 13 4.5 13h15c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5"/></svg>
@@ -35,7 +35,9 @@
         <input type="text" id="username" placeholder="Digite seu Login">
         <label for="newpassword">Senha:</label>
         <input type="password" id="password" placeholder="Digite sua Senha">
-        <button id="logar"onclick="logar()">Acessar</button>
+        <div>
+            <button id="logar"onclick="logar()">Acessar</button>
+        </div>
     </div>
     <div class="container-register"> 
         <h3>Cadastre-se</h3>
@@ -45,7 +47,9 @@
         <input type="password" id="newpassword" placeholder="Digite sua Senha">
         <label for="newpassword">Repetir senha:</label>
         <input type="password" id="reppassword" placeholder="Repita a Senha">
-        <button id="cadastrar"onclick="cadastrar()">Fazer Cadastro</button>
+        <div>
+            <button id="cadastrar"onclick="cadastrar()">Fazer Cadastro</button>
+        </div>
     </div>
 </div>
 
