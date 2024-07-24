@@ -28,3 +28,10 @@ function irPaginaCatalogo(){
     window.location.href = "catalogo.html"
 
 }
+
+function cadastrarProduto(){
+    let nome = document.getElementById("nome").value;
+    // let descricao = 
+    // let foto = 
+    // let valor = 
+}
