@@ -26,23 +26,24 @@
 
             <h1>Cadastro de produtos</h1>
             <div id="central"><h3>Nome do produto:</h3>
-                <input type="text" placeholder="Nome">
+                <input type="text" id="nome" placeholder="Nome">
                 <h3>Descrição do produto:</h3>
-                <input type="text" placeholder="Descrição">
+                <input type="text" id="descricao" placeholder="Descrição">
                 <h3>Valor do produto:</h3>
-                <input type="number" placeholder="Valor">
+                <input type="number" id="valor" placeholder="Valor">
                 <!-- <h3>Categoria do produto:</h3>
                 <input type="text" placeholder="Categoria"> -->
                 <h3>Foto do produto:</h3>
-                <input type="text" placeholder="Foto"><br><br>
+                <input type="text" id="foto" placeholder="Foto"><br><br>
                 
                 
                 
             </div>
             <div id="botoes">
-                <button>Incluir Produto</button>
-                <button>Editar Produto</button>
-                <button>Excluir Produto</button>
+                <button onclick="cadastrarProduto()">Cadastrar</button>
+                <button onclick="editarProduto()">Editar</button>
+                <button onclick="salvarEdicao()">Salvar</button>
+                <button onclick="excluirProduto()">Excluir</button>
             </div>
         </div>
     </div>
