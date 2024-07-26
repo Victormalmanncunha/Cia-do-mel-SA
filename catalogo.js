@@ -61,3 +61,17 @@ for (let produto of listaProdutos){
 document.getElementById("pesquisar").value=""
 }
 
+function abrirCarrinho(){
+    document.getElementById("modalCarrinho").style.display="flex"
+}
+document.addEventListener("click", (evento)=>{
+    console.log(evento.target)
+    if(evento.target==document.getElementById("modalCarrinho")){
+        fecharCarrinho()
+    }
+})
+
+function fecharCarrinho(){
+    document.getElementById("modalCarrinho").style.display="none"
+}
+
