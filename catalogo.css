@@ -137,3 +137,28 @@
 #cadastroProdutos{
     display: none;
 }
+#divPesquisar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#divPesquisar svg{
+    cursor: pointer;
+}
+#divPesquisar input{
+    font-size: 1.2rem;
+}
+#modalCarrinho{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    display: none;
+    z-index: 1;
+    justify-content: right;
+}
+#conteudoCarrinho{
+    height: 100%;
+    width: 30%;
+    background-color: aliceblue;
+}
