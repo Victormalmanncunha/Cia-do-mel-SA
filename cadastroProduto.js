@@ -53,6 +53,10 @@ function cadastrarProduto(){
             }
 
         } 
+        if(typeof Number(valor) == NaN){
+            alert("Digite um valor válido");
+            return;
+        }
         let produto =  {
             nome:nome, 
             descricao:descricao,
