@@ -7,7 +7,7 @@ function irPaginaCadastro(){
     localStorage.removeItem("logado")
     document.getElementById("nomeLogado").innerHTML = `Entrar/Cadastrar-se`
     document.getElementById("mensagemUsuario").innerHTML = `CIA DO MEL`
-    alert("VOLTE SEMPRE!!")
+    mostrarModal("VOLTE SEMPRE!!")
 }
 function checarLogado(){
     let logado = JSON.parse(localStorage.getItem("logado"));
@@ -24,3 +24,13 @@ function irPaginaCatalogo(){
     window.location.href = "catalogo.html"
 
 }
+
+function mostrarModal(texto){
+    document.getElementById("modalTexto").innerHTML=texto;
+    document.getElementById("modal").style.display="flex"
+  }
+  
+  function fecharModal(){
+      document.getElementById("modal").style.display="none";
+  }
+  
