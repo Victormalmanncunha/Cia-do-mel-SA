@@ -26,7 +26,7 @@ if (usuarios == null) {
     }
     
 }
-alert(mensagem)
+mostrarModal(mensagem)
 }
 
 function cadastrar(){
@@ -40,19 +40,19 @@ function cadastrar(){
             let usuarios = JSON.parse(localStorage.getItem("usuarios")) || []
             for(let verificado of usuarios){
                 if(verificado.login == usuario.login){
-                    return alert("Esse login já foi cadastrado, realize um cadastro com nome diferente")
+                    return  mostrarModal("Esse login já foi cadastrado, realize um cadastro com nome diferente")
                 }
             }
             
             usuarios.push(usuario);
             localStorage.setItem("usuarios", JSON.stringify(usuarios));
-            alert("Usuário cadastrado com sucesso!");   
+            mostrarModal("Usuário cadastrado com sucesso!");   
             
         }else{
-            alert("As senhas são diferentes!");
+            mostrarModal("As senhas são diferentes!");
         }
     } else{
-        alert("Preencha os campos obrigatórios.")
+        mostrarModal("Preencha os campos obrigatórios.")
     }
         
 }
@@ -70,3 +70,13 @@ function criarAdm(){
     }
 }
 criarAdm()
+
+function mostrarModal(texto){
+    document.getElementById("modalTexto").innerHTML=texto;
+    document.getElementById("modal").style.display="flex"
+  }
+  
+  function fecharModal(){
+      document.getElementById("modal").style.display="none";
+  }
+  
