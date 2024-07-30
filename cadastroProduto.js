@@ -17,7 +17,7 @@ function irPaginaCadastro(){
     localStorage.removeItem("logado")
     document.getElementById("nomeLogado").innerHTML = `Entrar/Cadastrar-se`
     document.getElementById("mensagemUsuario").innerHTML = `CIA DO MEL`
-    alert("VOLTE SEMPRE!!")
+    mostrarModal("VOLTE SEMPRE!!")
     window.location.href = "index.html"
 }
 function checarLogado(){
@@ -44,17 +44,17 @@ function cadastrarProduto(){
     let produtos = JSON.parse(localStorage.getItem("produtos")) || [];
 
     if(nome == "" || descricao == "" || foto == "" ||valor == "" ){
-        alert ("Preencha todos os campos")
+        mostrarModal ("Preencha todos os campos")
     }else {
         for( let produto of produtos){
             if (produto.nome == nome){
-                alert("Produto ja cadastrado")
+                mostrarModal("Produto ja cadastrado")
                 return;
             }
 
         } 
         if(typeof Number(valor) == NaN){
-            alert("Digite um valor válido");
+            mostrarModal("Digite um valor válido");
             return;
         }
         let produto =  {
@@ -66,7 +66,7 @@ function cadastrarProduto(){
         } 
         produtos.push(produto)
          localStorage.setItem("produtos", JSON.stringify(produtos)) 
-         alert("Produto Cadastrado com Sucesso")
+         mostrarModal("Produto Cadastrado com Sucesso")
          limparFormulario()
     } 
     
@@ -81,7 +81,7 @@ for (i=0;i<produtos.length;i++){
         inputFoto.value = produtos[i].foto
         inputValor.value = produtos[i].valor
         encontrado = i
-        alert(`${produtoSelecionado} selecionado`)
+        mostrarModal(`${produtoSelecionado} selecionado`)
 
     }
 
@@ -97,7 +97,7 @@ function salvarEdicao (){
     produtos[encontrado].valor=inputValor.value
     localStorage.setItem("produtos",JSON.stringify(produtos))
     limparFormulario()
-    alert("Alterado com Sucesso")
+    mostrarModal("Alterado com Sucesso")
 }
 
 function limparFormulario(){
@@ -112,11 +112,20 @@ function excluirProduto(){
     for (let i = 0; i<produtos.length; i++){
         if(produtos[i].nome==inputNome.value){
             produtos.splice(i,1)
-            alert(`${inputNome.value} Excluido com Sucesso`)
+            mostrarModal(`${inputNome.value} Excluido com Sucesso`)
             localStorage.setItem("produtos", JSON.stringify(produtos))
             limparFormulario()
         }
     }
+}
+
+function mostrarModal(texto){
+  document.getElementById("modalTexto").innerHTML=texto;
+  document.getElementById("modal").style.display="flex"
+}
+
+function fecharModal(){
+    document.getElementById("modal").style.display="none";
 }
 
 
